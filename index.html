@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Nina Carducci - Photographe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Découvrez le portfolio et les services de Nina Carducci, photographe professionnelle spécialisée dans les mariages, portraits, et événements.">
+    <link
+      rel="icon"
+      href="./assets/images/camera-solid.ico"
+      type="image/x-icon">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
+      rel="stylesheet">
+    <meta charset="UTF-8">
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js defer"></script>
+    <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js"></script>
   </head>
   <body>
@@ -25,19 +32,19 @@
       <h3 class="name">Nina Carducci</h3>
       <div class="nav">
         <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" tabindex="0">À propos</a></li>
+          <li><a href="#gallery" tabindex="0">Galerie</a></li>
+          <li><a href="#services" tabindex="0">Service</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
           <li>
             <a
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img
-                src="assets/images/instagram.png"
-                alt="importantestagram logo"
-            /></a>
+              aria-label="Visitez mon profil Instagram"
+              tabindex="0"
+              ><img src="assets/images/instagram.png" alt="Instagram logo" />
+            </a>
           </li>
         </ul>
       </div>
@@ -47,6 +54,7 @@
         id="carouselExampleIndicators"
         class="carousel slide"
         data-bs-ride="carousel"
+        aria-live="polite"
       >
         <div class="carousel-indicators">
           <button
@@ -121,12 +129,12 @@
         />
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <h3 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </h3>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -140,68 +148,68 @@
       </div>
     </div>
     <div id="gallery">
-      <h3 class="title">Portfolio</h3>
+      <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
-            alt="A live concert with a guitarist on stage"
+            alt="A guitarist performing live on stage during a concert."
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
-            alt="A man with a suit crossing his hands and wearing a hand watch in his left hand looking to you."
+            alt="A man in a suit crossing his arms and wearing a wristwatch."
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
-            alt="two ladies are setting down, it look like they are talking to someone not in the photo and one lady is smilying wearing a blue dress."
+            alt="Two women sitting and smiling during a conversation in an office."
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
-            alt="A couple holding hands in a field"
+            alt="A couple holding hands in a field during their wedding."
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
-            alt="An afrecain American man closing his eyes in a field wearing a shirt."
+            alt="An African American man standing in a field with his eyes closed."
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
-            alt="A bride and groom walking and laughing in a field"
+            alt="A bride and groom walking and laughing in a field."
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
-            alt="A young girl with glasses putting her right hand on her hair."
+            alt="A young girl with glasses adjusting her hair."
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
-            alt="A singer on stage holding the mic with his right hand and raising his left hand."
+            alt="A singer on stage holding a microphone and raising one hand."
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
-            alt="a smiling lady sat on s chair in front of her there's a laptop and on her left hand a cup, on the right hand there's a golden statue of woman holding a balance."
+            alt="A smiling woman sitting at a desk with a laptop and a cup."
           />
         </div>
       </div>
       <div class="quote">
         <figure>
-          <blockquote>
+          <blockquote lang="fr">
             <h1 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
@@ -214,7 +222,7 @@
       </div>
     </div>
     <div id="services">
-      <h3 class="title">Mes services</h3>
+      <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
           <div class="service__description">
@@ -260,7 +268,7 @@
     </div>
     <div class="quote">
       <figure>
-        <blockquote>
+        <blockquote lang="fr">
           <h1 class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
