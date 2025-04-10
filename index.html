@@ -44,6 +44,7 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
+              rel="noopener"
               aria-label="Visitez mon profil Instagram"
               tabindex="0"
               ><img src="assets/images/instagram.png" alt="Instagram logo" />
@@ -296,55 +297,58 @@
             aria-labelledby="form-title"
             role="form"
           >
-            <label for="nom">Nom</label>
-            <input
-              type="text"
-              name="nom"
-              id="nom"
-              aria-required="true"
-              required
-              aria-describedby="nom-hint"
-              placeholder="Entrez votre nom"
-            />
-            <small id="nom-hint" class="form-hint sr-only"
-              >Votre nom complet.</small
-            >
+            <fieldset>
+              <legend>Informations de contact</legend>
+              <label for="nom">Nom</label>
+              <input
+                type="text"
+                name="nom"
+                id="nom"
+                aria-required="true"
+                required
+                aria-describedby="nom-hint"
+                placeholder="Entrez votre nom"
+              />
+              <small id="nom-hint" class="form-hint sr-only"
+                >Votre nom complet.</small
+              >
 
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              aria-required="true"
-              required
-              aria-describedby="email-hint"
-              placeholder="Entrez votre email"
-            />
-            <small id="email-hint" class="form-hint sr-only"
-              >Votre adresse email valide.</small
-            >
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                aria-required="true"
+                required
+                aria-describedby="email-hint"
+                placeholder="Entrez votre email"
+              />
+              <small id="email-hint" class="form-hint sr-only"
+                >Votre adresse email valide.</small
+              >
 
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              aria-required="true"
-              required
-              aria-describedby="message-hint"
-              placeholder="Entrez votre message"
-              lang="fr"
-            ></textarea>
-            <small id="message-hint" class="form-hint sr-only"
-              >Votre message ou demande.</small
-            >
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                aria-required="true"
+                required
+                aria-describedby="message-hint"
+                placeholder="Entrez votre message"
+                lang="fr"
+              ></textarea>
+              <small id="message-hint" class="form-hint sr-only"
+                >Votre message ou demande.</small
+              >
 
-            <input
-              type="submit"
-              value="Envoyer le formulaire"
-              aria-label="Envoyer le formulaire"
-            />
+              <input
+                type="submit"
+                value="Envoyer le formulaire"
+                aria-label="Envoyer le formulaire"
+              />
+            </fieldset>
           </form>
         </div>
         <div class="picture right">
