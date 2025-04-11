@@ -102,7 +102,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #5e5a26;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -262,6 +262,22 @@ a:focus {
   outline: 2px solid #005fcc; /* High-contrast blue outline */
   outline-offset: 2px; /* Space between the outline and the element */
   border-radius: 4px; /* Optional: rounded corners for consistency */
+}
+
+/* Better color contrast -  better accessibility */
+.carousel-indicators button {
+  background-color: #005fcc; /* High-contrast blue */
+  border: 2px solid #ffffff; /* White border for better visibility */
+}
+
+.carousel-indicators .active {
+  background-color: #ffffff; /* White for the active indicator */
+  border: 2px solid #005fcc; /* Blue border for contrast */
+}
+
+.visually-hidden {
+  color: #000; /* Ensure text color has high contrast */
+  background-color: #fff; /* Adjust background to meet contrast ratio */
 }
 
 @media all and (max-width: 1180px) {
