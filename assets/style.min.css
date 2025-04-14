@@ -7,7 +7,7 @@ body {
   font-style: normal;
 }
 .top-header {
-  background-color: white;
+  background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -17,31 +17,25 @@ body {
   padding-block: 30px;
   align-items: center;
 }
-
 .top-header .name {
   font-size: 26px;
 }
-
 .nav ul {
   display: flex;
   list-style-type: none;
   font-size: 14px;
   margin-bottom: 0;
 }
-
 .nav li {
   padding-inline: 10px;
 }
-
 .nav a {
   text-decoration: none;
   color: #000;
 }
-
 .social-link img {
   width: 20px;
 }
-
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -49,7 +43,6 @@ body {
   padding-block: 100px;
   position: relative;
 }
-
 .picture.left::before {
   content: " ";
   background-color: #e5975f;
@@ -60,13 +53,11 @@ body {
   left: 0;
   z-index: -1;
 }
-
 .picture {
   flex: 1;
   margin: 0 20px;
   z-index: 0;
 }
-
 .picture img {
   width: 100%;
 }
@@ -88,7 +79,6 @@ body {
   width: 80%;
   font-size: 14px;
 }
-
 #gallery {
   min-height: 100vh;
 }
@@ -102,7 +92,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #5e5a26; /* Darker shade of gold - Contrast fix */
+  background-color: #5e5a26;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -129,13 +119,12 @@ body {
 .mg-next {
   width: 30px;
   height: 30px;
-  border-radius: 00%;
+  border-radius: 0;
   justify-content: center;
   align-items: center;
   display: flex;
   font-size: 24px;
 }
-
 .quote {
   font-family: "Spectral";
   font-style: italic;
@@ -153,7 +142,6 @@ body {
   font-weight: 800;
   font-size: 22px;
 }
-
 #services {
   margin: auto;
   background-color: #a8d5d8;
@@ -169,15 +157,13 @@ body {
   left: 0;
   z-index: 0;
 }
-
 #services .container {
   justify-content: space-between;
   display: flex;
   padding: 2em 0;
 }
-
 .service {
-  background-color: white;
+  background-color: #fff;
   max-width: 390px;
   width: 30%;
   height: 337px;
@@ -187,7 +173,6 @@ body {
   justify-content: space-between;
   z-index: 1;
 }
-
 #contact {
   margin: auto;
   background-color: #d8d3a8;
@@ -195,7 +180,6 @@ body {
   padding-inline: 100px;
   padding-block: 100px;
 }
-
 #contact .container {
   display: flex;
 }
@@ -218,7 +202,6 @@ form {
   width: 70%;
   align-items: flex-start;
 }
-
 form input {
   width: 100%;
   background-color: transparent;
@@ -226,7 +209,6 @@ form input {
   height: 2.5em;
   margin-bottom: 20px;
 }
-
 form textarea {
   width: 100%;
   background-color: transparent;
@@ -240,8 +222,6 @@ input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
 }
-
-/* for screen readers only */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -253,48 +233,37 @@ input[type="submit"] {
   white-space: nowrap;
   border: 0;
 }
-
-/* Add focus styles for better accessibility */
 input:focus,
 textarea:focus,
 button:focus,
 a:focus {
-  outline: 2px solid #005fcc; /* High-contrast blue outline */
-  outline-offset: 2px; /* Space between the outline and the element */
-  border-radius: 4px; /* Optional: rounded corners for consistency */
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
-
-/* Better color contrast -  better accessibility */
 .carousel-indicators button {
-  background-color: #005fcc; /* High-contrast blue */
-  border: 2px solid #ffffff; /* White border for better visibility */
+  background-color: #005fcc;
+  border: 2px solid #fff;
 }
-
 .carousel-indicators .active {
-  background-color: #ffffff; /* White for the active indicator */
-  border: 2px solid #005fcc; /* Blue border for contrast */
+  background-color: #fff;
+  border: 2px solid #005fcc;
 }
-
 .visually-hidden {
-  color: #000; /* Ensure text color has high contrast */
-  background-color: #fff; /* Adjust background to meet contrast ratio */
+  color: #000;
+  background-color: #fff;
 }
-
-/* Default filter category style */
 .filter-category {
-  background-color: #f8f9fa; /* Light gray */
-  color: #000; /* Black text */
+  background-color: #f8f9fa;
+  color: #000;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
-
-/* Active filter category style */
 .filter-category.active {
-  background-color: #5e5a26; /* Gold background for active category */
-  color: #fff; /* White text for contrast */
+  background-color: #5e5a26;
+  color: #fff;
 }
-
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
@@ -312,7 +281,6 @@ a:focus {
     width: 100%;
   }
 }
-
 @media all and (max-width: 1000px) {
   #about {
     flex-direction: column;
@@ -345,7 +313,6 @@ a:focus {
   .service__description {
     margin-bottom: 1em;
   }
-
   #services .container::before {
     width: 30%;
     height: 100%;
@@ -354,7 +321,6 @@ a:focus {
     left: auto;
     z-index: 0;
   }
-
   #contact .container {
     flex-direction: column;
   }
@@ -370,7 +336,6 @@ a:focus {
     z-index: -1;
   }
 }
-
 @media all and (max-width: 650px) {
   .top-header {
     flex-direction: column;
@@ -379,7 +344,7 @@ a:focus {
   .top-header .nav,
   .top-header .nav ul {
     width: 100%;
-    padding: 0 0 0 0;
+    padding: 0;
   }
   .top-header .nav li {
     flex: 1;
