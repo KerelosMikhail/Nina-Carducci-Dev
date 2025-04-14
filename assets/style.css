@@ -90,7 +90,7 @@ body {
 }
 
 #gallery {
-  	min-height: 100vh;
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -102,7 +102,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #5e5a26;
+  background-color: #5e5a26; /* Darker shade of gold - Contrast fix */
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -278,6 +278,21 @@ a:focus {
 .visually-hidden {
   color: #000; /* Ensure text color has high contrast */
   background-color: #fff; /* Adjust background to meet contrast ratio */
+}
+
+/* Default filter category style */
+.filter-category {
+  background-color: #f8f9fa; /* Light gray */
+  color: #000; /* Black text */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Active filter category style */
+.filter-category.active {
+  background-color: #5e5a26; /* Gold background for active category */
+  color: #fff; /* White text for contrast */
 }
 
 @media all and (max-width: 1180px) {
